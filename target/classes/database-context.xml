@@ -22,9 +22,9 @@
 		<property name="driverClassName" value="org.postgresql.Driver" />
 		<property name="url" value="jdbc:postgresql://localhost:5432/Company" />
 		<property name="username" value="postgres" />
-		<property name="password" value="d20e105634" />
+		<property name="password" value="password" />
 	</bean>
-<!-- After run the code for the first time, comment the jdbc initialize tag below. If its doesnt made, the error will occur( the Table already exist)  -->
+<!-- After run the code for the first time, comment the jdbc:initialize tag below. If its doesn`t made, an error will occur( the Table already exist)  -->
 	<jdbc:initialize-database data-source="dataSource"
 		enabled="true">
 		<jdbc:script location="classpath:db-schema.sql" />
