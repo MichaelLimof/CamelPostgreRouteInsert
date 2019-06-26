@@ -24,7 +24,7 @@
 		<property name="username" value="postgres" />
 		<property name="password" value="d20e105634" />
 	</bean>
-
+<!-- After run the code for the first time, comment the jdbc initialize tag below. If its doesnt made, the error will occur( the Table already exist)  -->
 	<jdbc:initialize-database data-source="dataSource"
 		enabled="true">
 		<jdbc:script location="classpath:db-schema.sql" />

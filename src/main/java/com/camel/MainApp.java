@@ -29,7 +29,7 @@ public class MainApp {
 	            Company comp2 = getCompany2(); 
 	            resp = producerTemplate.requestBody("direct:insert", comp2, String.class);
 
-	            // Get Employee of inserted employees
+	            // Get Company of inserted companies
 	            List<Company> companies = producerTemplate.requestBody("direct:select", null, List.class);
 	            System.out.println("companies:" + companies);
 
@@ -45,11 +45,11 @@ public class MainApp {
 
 	        Company comp = new Company();
 
-	        comp.setNome("empId1");
-	        comp.setCnpj("1232-2312/00023");
-	        comp.setSetor("construcao");
-	        comp.setCep("12324-443");
-	        comp.setTelefone("19993843443");
+	        comp.setNome("Metais Vilares");
+	        comp.setCnpj("1293-4304/00875");
+	        comp.setSetor("Metalurgica");
+	        comp.setCep("18903-776");
+	        comp.setTelefone("1923458765");
 	        
 	        
 	        return comp;
@@ -60,11 +60,11 @@ public class MainApp {
 
 	        Company comp = new Company();
 
-	        comp.setNome("Aviacao BR");
-	        comp.setCnpj("5645-7688/00399");
-	        comp.setSetor("aviacao");
-	        comp.setCep("16577-566");
-	        comp.setTelefone("19999834004");
+	        comp.setNome("Consultories FEM");
+	        comp.setCnpj("2356-0083/00078");
+	        comp.setSetor("Servicos");
+	        comp.setCep("16123-344");
+	        comp.setTelefone("19987763423");
 	        
 	        
 	        return comp;
